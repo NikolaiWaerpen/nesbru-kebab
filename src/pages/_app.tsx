@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
+import Home from ".";
 import { useState } from "react";
-import Banner from "../components/Banner";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -24,8 +24,7 @@ export default function App({ Component, pageProps }: AppProps) {
     window.addEventListener("scroll", changeBackground);
 
   return (
-    <div>
-      <div>yes</div>
+    <div className="relative">
       <nav
         className={`${
           scrolledDown || navOpen ? "text-black" : "text-white"
@@ -95,58 +94,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </div>
       </nav>
 
-      <Banner />
-
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Home />
     </div>
   );
 }
