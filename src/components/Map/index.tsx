@@ -3,6 +3,13 @@ import { MAP_DETAILS, MAP_KEY } from "../../../consts";
 import { faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+type FontAwesomeIcon = {
+  icon: any;
+  className: any;
+  lat: any;
+  lng: any;
+};
+
 export default function Map() {
   return (
     <div>
@@ -15,8 +22,9 @@ export default function Map() {
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
             className="text-4xl hover:text-pinkred"
-            lat={59.863839388681825}
-            lng={10.48855488198559}
+            {...{ lat: MAP_DETAILS.center.lat, lng: MAP_DETAILS.center.lng }} //https://discord.com/channels/102860784329052160/106513299905994752/797181345796587572
+            // lat={MAP_DETAILS.center.lat}
+            // lng={MAP_DETAILS.center.lng}
           />
         </GoogleMapReact>
       </div>
