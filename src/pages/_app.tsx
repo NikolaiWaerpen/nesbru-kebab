@@ -93,7 +93,7 @@ export default function App({ Component, pageProps }: AppProps) {
           </ul>
         </div>
       </nav>
-
+      {/* App content */}
       <Home />
     </div>
   );
