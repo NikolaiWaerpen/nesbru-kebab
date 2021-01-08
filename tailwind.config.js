@@ -12,6 +12,9 @@ module.exports = {
         550: "550px",
         805: "805px",
       },
+      height: {
+        "screen/2": "50vh",
+      },
     },
   },
   variants: {
