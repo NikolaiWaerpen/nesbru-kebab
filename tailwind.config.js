@@ -8,6 +8,7 @@ module.exports = {
         dropdown: "#232323",
         dropdownborder: "#303030",
         offwhite: "#fbf8f6",
+        secondarytextcolor: "#52525B",
       },
       screens: {
         550: "550px",

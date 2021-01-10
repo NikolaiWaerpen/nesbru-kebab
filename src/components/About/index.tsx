@@ -4,10 +4,10 @@ export default function About() {
       <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block">
         Om oss
       </h3>
-      <h1 className="font-bold text-4xl mt-5">
+      <h1 className="font-bold text-4xl mt-6">
         Vi leverer de beste ingrediensene til våre pålitelige matelskere
       </h1>
-      <p className="text-gray-600 mt-5">
+      <p className="text-secondarytextcolor mt-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. A veniam iure
         aliquam id reiciendis velit praesentium voluptatem porro ipsam minus,
         earum eveniet amet odio quod dolorum inventore nobis, quos esse.
