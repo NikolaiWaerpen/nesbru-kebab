@@ -22,9 +22,8 @@ export default function Map() {
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
             className="text-4xl hover:text-pinkred"
-            {...{ lat: MAP_DETAILS.center.lat, lng: MAP_DETAILS.center.lng }} //https://discord.com/channels/102860784329052160/106513299905994752/797181345796587572
-            // lat={MAP_DETAILS.center.lat}
-            // lng={MAP_DETAILS.center.lng}
+            lng={MAP_DETAILS.center.lng}
+            lat={MAP_DETAILS.center.lat}
           />
         </GoogleMapReact>
       </div>
