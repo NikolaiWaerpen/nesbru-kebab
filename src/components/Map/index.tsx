@@ -23,8 +23,7 @@ export default function Map() {
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
             className="text-4xl hover:text-themecolor1"
-            lng={MAP_DETAILS.center.lng}
-            lat={MAP_DETAILS.center.lat}
+            {...{ lat: MAP_DETAILS.center.lat, lng: MAP_DETAILS.center.lng }}
           />
         </GoogleMapReact>
       </div>
