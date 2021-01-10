@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        pinkred: "#ff3939",
+        themecolor1: "#ff3939",
         dropdown: "#232323",
         dropdownborder: "#303030",
       },

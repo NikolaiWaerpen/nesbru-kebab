@@ -8,7 +8,9 @@ export default function Banner() {
         alt="logo picture/burger"
         className="w-screen max-h-screen object-cover"
       />
-      <button className="uppercase">lorem</button>
+      <div className="bg-dropdown">
+        <button className="button">Se meny</button>
+      </div>
     </div>
   );
 }

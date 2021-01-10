@@ -13,7 +13,7 @@ type FontAwesomeIcon = {
 export default function Map() {
   return (
     <div>
-      <div className="w-screen h-screen/2 bg-pinkred">
+      <div className="w-screen h-screen/2 bg-themecolor1">
         <GoogleMapReact
           bootstrapURLKeys={{ key: MAP_KEY }}
           defaultCenter={MAP_DETAILS.center}
@@ -21,7 +21,7 @@ export default function Map() {
         >
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
-            className="text-4xl hover:text-pinkred"
+            className="text-4xl hover:text-themecolor1"
             lng={MAP_DETAILS.center.lng}
             lat={MAP_DETAILS.center.lat}
           />
