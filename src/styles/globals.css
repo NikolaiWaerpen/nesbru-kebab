@@ -1,12 +1,15 @@
 @tailwind base;
 @tailwind components;
+
+body {
+  @apply bg-gray-100;
+}
+
 @tailwind utilities;
 
 .paddingx {
   @apply lg:px-0 px-12;
 }
-
-/* md:px-12 sm:px-10 550:px-12 */
 
 .navoptions {
   @apply lg:px-5 lg:py-0 py-4 block;
@@ -17,5 +20,5 @@
 }
 
 .button {
-  @apply flex rounded-full py-4 px-10 uppercase text-xs lg:text-sm font-bold tracking-wider border-2 hover:border-white hover:bg-transparent text-white bg-themecolor1 border-themecolor1 transition ease-out duration-500;
+  @apply flex rounded-full py-4 px-10 uppercase text-xs lg:text-sm tracking-wider border-2 hover:border-white hover:bg-transparent text-white bg-themecolor1 border-themecolor1 transition ease-out duration-500;
 }
