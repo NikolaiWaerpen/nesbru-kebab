@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import Home from ".";
+// @ts-ignore
 import { useState } from "react";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
