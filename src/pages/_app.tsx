@@ -33,9 +33,9 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* Container for title and burger menu */}
         <div
           className={`
-          ${scrolledDown && !navOpen ? "pt-3 bg-white" : "lg:pt-10"}
-          ${navOpen && !scrolledDown ? "pt-5 pb-5 bg-white" : ""} 
-          ${scrolledDown && navOpen ? "pt-3 bg-white" : ""}
+          ${scrolledDown && !navOpen ? "pt-3 bg-offwhite" : "lg:pt-10"}
+          ${navOpen && !scrolledDown ? "pt-5 pb-5 bg-offwhite" : ""} 
+          ${scrolledDown && navOpen ? "pt-3 bg-offwhite" : ""}
           ${!scrolledDown && !navOpen ? "pt-5 pb-5" : ""}
 
           flex justify-between items-center paddingx pb-3 lg:justify-center`}
@@ -65,12 +65,13 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
         </div>
 
+        {/* List */}
         <div
           className={`
           ${navOpen ? "block text-white bg-dropdown" : "hidden lg:block"}
-          ${scrolledDown && "bg-white"}`}
+          ${scrolledDown && !navOpen && "bg-offwhite"}
+          ${scrolledDown && navOpen && "bg-dropdown"}`}
         >
-          {/* List */}
           <ul
             className={`lg:flex lg:justify-center uppercase py-1 paddingx 
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}

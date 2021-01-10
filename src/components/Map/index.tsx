@@ -18,6 +18,7 @@ export default function Map() {
           bootstrapURLKeys={{ key: MAP_KEY }}
           defaultCenter={MAP_DETAILS.center}
           defaultZoom={MAP_DETAILS.zoom}
+          yesIWantToUseGoogleMapApiInternals
         >
           <FontAwesomeIcon
             icon={faMapMarkerAlt}

@@ -7,6 +7,7 @@ module.exports = {
         themecolor1: "#ff3939",
         dropdown: "#232323",
         dropdownborder: "#303030",
+        offwhite: "#fbf8f6",
       },
       screens: {
         550: "550px",
