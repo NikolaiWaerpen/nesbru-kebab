@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import Link from "next/link";
 import "../styles/globals.css";
 import Home from ".";
 
@@ -11,9 +12,13 @@ export default function App({ Component, pageProps }: AppProps) {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(false);
 
-  const handleClick = () => {
+  const openNav = () => {
     if (navOpen) setNavOpen(false);
     else setNavOpen(true);
+  };
+
+  const closeNav = () => {
+    setNavOpen(false);
   };
 
   const changeBackground = () => {
@@ -53,7 +58,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
           {/* Burger menu */}
           <div className="lg:hidden flex w-76px justify-center">
-            <button className="block" onClick={() => handleClick()}>
+            <button className="block" onClick={() => openNav()}>
               {navOpen ? (
                 <FontAwesomeIcon icon={faTimes} className="text-3xl" />
               ) : (
@@ -78,19 +83,29 @@ export default function App({ Component, pageProps }: AppProps) {
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
             <li className="navoptions">
-              <a href="#">Hjem</a>
+              <Link href="#">
+                <a onClick={closeNav}></a>
+              </Link>
             </li>
             <li className="navoptions">
-              <a href="#">Om oss</a>
+              <Link href="#about">
+                <a onClick={closeNav}>Om oss</a>
+              </Link>
             </li>
             <li className="navoptions">
-              <a href="#">Tilbud</a>
+              <Link href="#hours">
+                <a onClick={closeNav}>Åpningstider</a>
+              </Link>
             </li>
             <li className="navoptions">
-              <a href="#">Meny</a>
+              <Link href={"#menu"}>
+                <a onClick={closeNav}>Meny</a>
+              </Link>
             </li>
             <li className="navoptions">
-              <a href="#">Kontakt oss</a>
+              <Link href="#contact">
+                <a onClick={closeNav}>Kontakt oss</a>
+              </Link>
             </li>
           </ul>
         </div>

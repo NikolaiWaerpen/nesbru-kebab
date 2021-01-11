@@ -34,3 +34,7 @@ body {
 .itemcontent {
   @apply text-secondarytextcolor;
 }
+
+.smallbadge {
+  @apply rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block;
+}

@@ -1,9 +1,7 @@
 export default function About() {
   return (
     <div className="mt-12">
-      <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block">
-        Om oss
-      </h3>
+      <h3 className="smallbadge">Om oss</h3>
       <h1 className="font-bold text-4xl mt-6">
         Vi leverer de beste ingrediensene til våre pålitelige matelskere
       </h1>

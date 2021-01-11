@@ -9,17 +9,23 @@ import Social from "../components/Social";
 
 export default function Home() {
   return (
-    <div>
+    <div id={"home"}>
       <Banner />
       <div className="mx-6">
-        <About />
-        <div className="mx-6">
-          <Menu />
-          <Contact />
-          <Hours />
-          <Social />
-          <Signature />
+        <div id={"about"}>
+          <About />
         </div>
+        <div id={"hours"}>
+          <Hours />
+        </div>
+        <div id={"menu"}>
+          <Menu />
+        </div>
+        <div id={"contact"}>
+          <Contact />
+        </div>
+        <Social />
+        <Signature />
       </div>
       <Map />
     </div>

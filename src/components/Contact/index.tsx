@@ -8,8 +8,8 @@ import {
 export default function Contact() {
   return (
     <div className="itemcontainer">
-      <h3 className="itemheader">Kontakt oss</h3>
-      <ul className="itemcontent">
+      <h3 className="smallbadge">Kontakt oss</h3>
+      <ul className="itemcontent mt-6">
         <li className="">
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
