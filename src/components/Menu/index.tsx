@@ -1,5 +1,6 @@
-import BurgerItem from "../BurgerItem";
-import { BURGERMENU } from "../../../consts";
+import BurgerItem from "./BurgerItem";
+import { BURGERMENU, PIZZAMENU } from "../../../consts";
+import PizzaItem from "./PizzaItem";
 
 export default function Menu() {
   return (
@@ -49,20 +50,25 @@ export default function Menu() {
           <span className="bg-blue-600">85,-</span>
           <span className="bg-purple-600">94,-</span>
         </div>
-
-        <br />
-        <br />
-        <br />
-
-        <h2 className="font-bold">Burgermeny</h2>
-        {BURGERMENU.map((hamburger) => (
-          <BurgerItem
-            item={hamburger.name}
-            size={hamburger.size}
-            price={hamburger.price}
-          />
-        ))}
       </div>
+      <h2 className="font-bold mt-12">Burgermeny</h2>
+      {BURGERMENU.map((hamburger) => (
+        <BurgerItem
+          item={hamburger.name}
+          size={hamburger.size}
+          price={hamburger.price}
+          dinnerprice={hamburger.dinnerprice}
+        />
+      ))}
+
+      <h2 className="font-bold mt-12">Pizzameny</h2>
+      {PIZZAMENU.map((pizza) => (
+        <PizzaItem
+          name={pizza.name}
+          description={pizza.description}
+          price={pizza.price}
+        />
+      ))}
     </div>
   );
 }
