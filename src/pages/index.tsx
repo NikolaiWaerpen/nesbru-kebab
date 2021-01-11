@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Contact from "../components/Contact";
 import Hours from "../components/Hours";
 import Map from "../components/Map";
+import Menu from "../components/Menu";
 import Signature from "../components/Signature";
 import Social from "../components/Social";
 
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="mx-6">
         <About />
         <div className="mx-6">
+          <Menu />
           <Contact />
           <Hours />
           <Social />
