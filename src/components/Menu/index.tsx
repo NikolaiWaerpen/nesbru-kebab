@@ -1,6 +1,7 @@
 import BurgerItem from "./BurgerItem";
-import { BURGERMENU, PIZZAMENU } from "../../../consts";
+import { BURGERMENU, GRILLMENU, PIZZAMENU } from "../../../consts";
 import PizzaItem from "./PizzaItem";
+import GrillItem from "./GrillItem";
 
 export default function Menu() {
   return (
@@ -68,6 +69,11 @@ export default function Menu() {
           description={pizza.description}
           price={pizza.price}
         />
+      ))}
+
+      <h2 className="font-bold mt-12">Grillmeny</h2>
+      {GRILLMENU.map((grillitem) => (
+        <GrillItem name={grillitem.name} price={grillitem.price} />
       ))}
     </div>
   );

@@ -156,3 +156,54 @@ exports.PIZZAMENU = [
     price: 25,
   },
 ];
+
+exports.GRILLMENU = [
+  {
+    name: "kebab liten",
+    price: 80,
+  },
+  {
+    name: "kebab stor",
+    price: 90,
+  },
+  {
+    name: "kyllingkebab liten",
+    price: 95,
+  },
+  {
+    name: "kyllingkebab stor",
+    price: 110,
+  },
+  {
+    name: "kebabmiddag liten",
+    price: 120,
+  },
+  {
+    name: "kebabmiddag stor",
+    price: 160,
+  },
+  {
+    name: "halv kylling middag",
+    price: 120,
+  },
+  {
+    name: "chicken nyggets middag",
+    price: 110,
+  },
+  {
+    name: "pommes frites liten",
+    price: 40,
+  },
+  {
+    name: "pommes frites stor",
+    price: 50,
+  },
+  {
+    name: "mineralvann 0,5l",
+    price: 35,
+  },
+  {
+    name: "mineralvann 1,5l",
+    price: 49,
+  },
+];
