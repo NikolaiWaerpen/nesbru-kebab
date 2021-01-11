@@ -3,5 +3,5 @@
 node_modules/
 .next
 .next/
-consts.ts
-consts.ts/
+# secret.js
+# secret.js/
