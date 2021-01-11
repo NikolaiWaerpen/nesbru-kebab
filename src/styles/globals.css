@@ -5,6 +5,10 @@ body {
   @apply bg-offwhite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @tailwind utilities;
 
 .paddingx {
