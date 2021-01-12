@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div id={"home"}>
       <Banner />
-      <div className="mx-6">
+      <div className="mx-6 lg:mx-16">
         <div id={"about"} className="itemcontainer">
           <About />
         </div>
@@ -21,15 +21,17 @@ export default function Home() {
         <div id={"menu"} className="itemcontainer">
           <Menu />
         </div>
-        <div id={"contact"} className="itemcontainer">
-          <Contact />
+        <div className="sm:mx-44 lg:flex lg:justify-around">
+          <div id={"contact"} className="itemcontainer ">
+            <Contact />
+          </div>
+          <div className="itemcontainer lg:mt-12">
+            <Social />
+          </div>
         </div>
-        <div className="itemcontainer">
-          <Social />
-        </div>
-        <div className="itemcontainer">
-          <Signature />
-        </div>
+      </div>
+      <div className="itemcontainer">
+        <Signature />
       </div>
       <Map />
     </div>

@@ -3,11 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Social() {
   return (
-    <div>
-      <a
-        href="#"
-        className="hover:text-themecolor1 hover:cursor-pointer flex justify-center"
-      >
+    <div className="flex">
+      <a href="#" className="hover:text-themecolor1 hover:cursor-pointer flex">
         <FontAwesomeIcon
           icon={faFacebookSquare}
           className="text-4xl mr-2 block"
