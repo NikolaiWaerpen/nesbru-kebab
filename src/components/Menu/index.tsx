@@ -5,12 +5,12 @@ import GrillItem from "./GrillItem";
 
 export default function Menu() {
   return (
-    <div className="mt-12">
+    <div>
       <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block">
         Meny
       </h3>
 
-      <h2 className="font-bold mt-6">Burgermeny</h2>
+      <h2 className="font-bold itemcontent">Burgermeny</h2>
       {BURGERMENU.map((hamburger) => (
         <BurgerItem
           item={hamburger.name}

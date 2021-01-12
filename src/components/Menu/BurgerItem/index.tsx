@@ -3,7 +3,7 @@ export default function MenuItem({ item, size, price, dinnerprice }) {
     <div>
       {dinnerprice ? (
         <div>
-          <div className="flex justify-between text-gray-700 uppercase text-sm mt-3">
+          <div className="flex justify-between text-gray-700 uppercase text-sm menuitemspacing">
             <div>
               <span>{item}</span>
             </div>
@@ -23,7 +23,7 @@ export default function MenuItem({ item, size, price, dinnerprice }) {
           </div>
         </div>
       ) : (
-        <div className="flex justify-between text-gray-700 uppercase text-sm mt-3">
+        <div className="flex justify-between text-gray-700 uppercase text-sm menuitemspacing">
           <span>{item}</span>
           <span className="text-xs text-gray-600">{size}g</span>
           <span>kr {price},-</span>

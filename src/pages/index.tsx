@@ -12,20 +12,24 @@ export default function Home() {
     <div id={"home"}>
       <Banner />
       <div className="mx-6">
-        <div id={"about"}>
+        <div id={"about"} className="itemcontainer">
           <About />
         </div>
-        <div id={"hours"}>
+        <div id={"hours"} className="itemcontainer">
           <Hours />
         </div>
-        <div id={"menu"}>
+        <div id={"menu"} className="itemcontainer">
           <Menu />
         </div>
-        <div id={"contact"}>
+        <div id={"contact"} className="itemcontainer">
           <Contact />
         </div>
-        <Social />
-        <Signature />
+        <div className="itemcontainer">
+          <Social />
+        </div>
+        <div className="itemcontainer">
+          <Signature />
+        </div>
       </div>
       <Map />
     </div>

@@ -16,7 +16,7 @@ export default function GrillItem({ name, price }) {
   }, []);
 
   return (
-    <div className={`${newLine ? "mt-6" : "mt-1.5"}`}>
+    <div className={`${newLine ? "mt-8" : "menuitemspacing"}`}>
       <div className="flex justify-between text-gray-700 uppercase text-sm">
         <span>{name}</span>
         <span>kr {price},-</span>

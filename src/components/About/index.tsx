@@ -1,8 +1,8 @@
 export default function About() {
   return (
-    <div className="mt-12">
+    <div>
       <h3 className="smallbadge">Om oss</h3>
-      <h1 className="font-bold text-4xl mt-6">
+      <h1 className="font-bold text-4xl itemcontent text-black">
         Vi leverer de beste ingrediensene til våre pålitelige matelskere
       </h1>
       <p className="text-secondarytextcolor mt-3">

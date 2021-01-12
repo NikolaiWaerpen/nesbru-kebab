@@ -28,7 +28,7 @@ html {
 }
 
 .itemcontainer {
-  @apply mt-12;
+  @apply pt-16;
 }
 
 .itemheader {
@@ -36,7 +36,11 @@ html {
 }
 
 .itemcontent {
-  @apply text-secondarytextcolor;
+  @apply mt-6;
+}
+
+.menuitemspacing {
+  @apply mt-3;
 }
 
 .smallbadge {

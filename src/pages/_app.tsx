@@ -84,7 +84,7 @@ export default function App({ Component, pageProps }: AppProps) {
           >
             <li className="navoptions">
               <Link href="#">
-                <a onClick={closeNav}></a>
+                <a onClick={closeNav}>Hjem</a>
               </Link>
             </li>
             <li className="navoptions">
