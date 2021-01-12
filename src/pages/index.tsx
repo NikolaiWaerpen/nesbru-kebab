@@ -11,17 +11,17 @@ export default function Home() {
   return (
     <div id={"home"}>
       <Banner />
-      <div className="mx-6 lg:mx-16">
-        <div id={"about"} className="itemcontainer">
+      <div>
+        <div id={"about"} className="itemcontainer mx-6 lg:mx-16">
           <About />
         </div>
-        <div id={"hours"} className="itemcontainer">
+        <div id={"hours"} className="itemcontainer mx-6 lg:mx-16">
           <Hours />
         </div>
         <div id={"menu"} className="itemcontainer">
           <Menu />
         </div>
-        <div className="sm:mx-44 lg:flex lg:justify-around">
+        <div className="mx-6 sm:mx-44 lg:mx-16 lg:flex lg:justify-around">
           <div id={"contact"} className="itemcontainer ">
             <Contact />
           </div>

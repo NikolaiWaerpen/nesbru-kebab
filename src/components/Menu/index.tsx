@@ -9,9 +9,14 @@ export default function Menu() {
       <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block">
         Meny
       </h3>
-      <div className="lg:flex lg:justify-between">
-        <div className="lg:w-1/4">
-          <h2 className="font-bold itemcontent">Burgermeny</h2>
+      <div>
+        <div className="flex">
+          <img
+            src="/images/burger.jpg"
+            alt="pizza"
+            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+          />
+          <h2 className="font-bold">Burgermeny</h2>
           {BURGERMENU.map((hamburger) => (
             <BurgerItem
               item={hamburger.name}
@@ -22,8 +27,13 @@ export default function Menu() {
           ))}
         </div>
 
-        <div className="lg:w-2/5">
-          <h2 className="font-bold itemcontent">Pizzameny</h2>
+        <div>
+          <img
+            src="/images/pizza.jpg"
+            alt="pizza"
+            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+          />
+          <h2 className="font-bold">Pizzameny</h2>
           {PIZZAMENU.map((pizza) => (
             <PizzaItem
               name={pizza.name}
@@ -33,8 +43,13 @@ export default function Menu() {
           ))}
         </div>
 
-        <div className="lg:w-1/4">
-          <h2 className="font-bold itemcontent">Grillmeny</h2>
+        <div>
+          <img
+            src="/images/kebab.png"
+            alt="pizza"
+            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+          />
+          <h2 className="font-bold">Grillmeny</h2>
           {GRILLMENU.map((grillitem) => (
             <GrillItem name={grillitem.name} price={grillitem.price} />
           ))}
