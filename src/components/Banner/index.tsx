@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Banner() {
   return (
     <div>
@@ -7,7 +9,9 @@ export default function Banner() {
         className="w-screen max-h-screen object-cover"
       />
       <div className="bg-dropdown">
-        <button className="button">Se meny</button>
+        <Link href="#menu">
+          <button className="button">Se meny</button>
+        </Link>
       </div>
     </div>
   );

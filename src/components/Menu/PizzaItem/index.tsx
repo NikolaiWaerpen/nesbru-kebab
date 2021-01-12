@@ -6,7 +6,7 @@ export default function PizzaItem({ name, description, price }) {
         <span>kr {price},-</span>
       </div>
       <div>
-        <span className="text-xs text-gray-600">{description}</span>
+        <span className="text-xs text-gray-600 uppercase">{description}</span>
       </div>
     </div>
   );
