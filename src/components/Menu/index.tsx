@@ -10,21 +10,23 @@ export default function Menu() {
         Meny
       </h3>
       <div>
-        <div className="flex">
+        <div className="lg:flex">
           <img
             src="/images/burger.jpg"
             alt="pizza"
-            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+            className="lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent hidden lg:block"
           />
-          <h2 className="font-bold">Burgermeny</h2>
-          {BURGERMENU.map((hamburger) => (
-            <BurgerItem
-              item={hamburger.name}
-              size={hamburger.size}
-              price={hamburger.price}
-              dinnerprice={hamburger.dinnerprice}
-            />
-          ))}
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12 lg:w-screen/2 lg:h-screen/2 bg-themecolor1">
+            <h2 className="font-bold">Burgermeny</h2>
+            {BURGERMENU.map((hamburger) => (
+              <BurgerItem
+                item={hamburger.name}
+                size={hamburger.size}
+                price={hamburger.price}
+                dinnerprice={hamburger.dinnerprice}
+              />
+            ))}
+          </div>
         </div>
 
         <div>
