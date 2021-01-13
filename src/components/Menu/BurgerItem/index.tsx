@@ -7,7 +7,9 @@ export default function MenuItem({ item, size, price, dinnerprice }) {
             <div>
               <span>{item}</span>
             </div>
-            <span className="text-xs menutextcolor2">{size}g</span>
+            {size ? (
+              <span className="text-xs menutextcolor2">{size}g</span>
+            ) : null}
             <div>
               <span>kr {price},-</span>
             </div>
@@ -25,7 +27,9 @@ export default function MenuItem({ item, size, price, dinnerprice }) {
       ) : (
         <div className="flex justify-between menutextcolor1 uppercase text-sm menuitemspacing">
           <span>{item}</span>
-          <span className="text-xs menutextcolor2">{size}g</span>
+          {size ? (
+            <span className="text-xs menutextcolor2">{size}g</span>
+          ) : null}
           <span>kr {price},-</span>
         </div>
       )}
