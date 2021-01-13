@@ -1,5 +1,7 @@
 exports.MAP_KEY = "AIzaSyDLX3fInnzrZVno5pJFpaEbdldeU8vHwKM";
 
+exports.SCROLL_DURATION = 1000;
+
 exports.MAP_DETAILS = {
   center: {
     lat: 59.863891940495954,

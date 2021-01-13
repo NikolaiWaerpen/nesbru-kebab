@@ -2,7 +2,7 @@ import { Link } from "react-scroll";
 
 export default function Banner() {
   return (
-    <div id="banner">
+    <div>
       <img
         src="/images/flour-big.jpg"
         alt="logo picture/burger"

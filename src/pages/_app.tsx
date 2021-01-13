@@ -3,8 +3,9 @@ import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import Home from ".";
 import { Link } from "react-scroll";
-
 import { useState } from "react";
+import { SCROLL_DURATION } from "../../consts";
+
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,12 +50,15 @@ export default function App({ Component, pageProps }: AppProps) {
         >
           {/* Title */}
           <div>
-            <a
-              href="/"
-              className={`${scrolledDown ? "text-2xl" : "text-4xl"} font-bold`}
-            >
-              Jevelin
-            </a>
+            <Link to="home" smooth={true} duration={SCROLL_DURATION}>
+              <a
+                className={`${
+                  scrolledDown ? "text-2xl" : "text-4xl"
+                } font-bold`}
+              >
+                Jevelin
+              </a>
+            </Link>
           </div>
 
           {/* Burger menu */}
@@ -66,12 +70,11 @@ export default function App({ Component, pageProps }: AppProps) {
                 <FontAwesomeIcon icon={faBars} className="text-3xl" />
               )}
             </button>
-            <a
-              href="https://www.facebook.com/NesbruKebab"
-              className="block ml-5"
-            >
-              <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
-            </a>
+            <Link to="social" smooth={true} duration={SCROLL_DURATION}>
+              <a className="block ml-5">
+                <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
+              </a>
+            </Link>
           </div>
         </div>
 
@@ -87,35 +90,35 @@ export default function App({ Component, pageProps }: AppProps) {
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
             <div>
-              <Link to="banner" smooth={true} duration={1000}>
+              <Link to="home" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav}>Hjem</a>
                 </li>
               </Link>
             </div>
             <div>
-              <Link to="about" smooth={true} duration={1000}>
+              <Link to="about" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav}>Om oss</a>
                 </li>
               </Link>
             </div>
             <div>
-              <Link to="hours" smooth={true} duration={1000}>
+              <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav}>Åpningstider</a>
                 </li>
               </Link>
             </div>
             <div>
-              <Link to="menu" smooth={true} duration={1000}>
+              <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav}>Meny</a>
                 </li>
               </Link>
             </div>
             <div>
-              <Link to="contact" smooth={true} duration={1000}>
+              <Link to="contact" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav}>Kontakt oss</a>
                 </li>

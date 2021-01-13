@@ -25,7 +25,7 @@ export default function Home() {
           <div id={"contact"} className="itemcontainer ">
             <Contact />
           </div>
-          <div className="itemcontainer lg:mt-12">
+          <div id={"social"} className="itemcontainer lg:mt-12">
             <Social />
           </div>
         </div>
