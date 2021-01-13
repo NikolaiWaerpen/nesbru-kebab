@@ -13,9 +13,9 @@ export default function Menu() {
           <img
             src="/images/burger.jpg"
             alt="pizza"
-            className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
+            className="itemcontentspacing lg:block lg:w-screen/2 lg:h-screen/2 lg:overflow-hidden lg:object-cover lg:rounded-r-3xl"
           />
-          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6">
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6 mt-6 lg:mt-0">
             <h2 className="font-bold menutextcolorheader">Burgermeny</h2>
             {BURGERMENU.map((hamburger) => (
               <BurgerItem
@@ -32,9 +32,9 @@ export default function Menu() {
           <img
             src="/images/pizza.jpg"
             alt="pizza"
-            className="hidden lg:block lg:max-w-screen-md lg:max-h-full overflow-hidden object-cover itemcontent rounded-l-3xl"
+            className="itemcontentspacing lg:block lg:max-w-screen-md lg:max-h-full lg:overflow-hidden lg:object-cover lg:rounded-l-3xl"
           />
-          <div className="lg:flex lg:flex-col lg:justify-center lg:mr-20 lg:w-1/4">
+          <div className="lg:flex lg:flex-col lg:justify-center lg:mr-20 lg:w-1/4 mt-6 lg:mt-0">
             <h2 className="font-bold menutextcolorheader">Pizzameny</h2>
             {PIZZAMENU.map((pizza) => (
               <PizzaItem
@@ -50,9 +50,9 @@ export default function Menu() {
           <img
             src="/images/kebab.png"
             alt="pizza"
-            className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
+            className="itemcontentspacing lg:block lg:w-screen/2 lg:h-screen/2 lg:overflow-hidden lg:object-cover lg:rounded-r-3xl"
           />
-          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6">
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6 mt-6 lg:mt-0">
             <h2 className="font-bold menutextcolorheader">Grillmeny</h2>
             {GRILLMENU.map((grillitem) => (
               <GrillItem name={grillitem.name} price={grillitem.price} />

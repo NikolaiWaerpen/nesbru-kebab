@@ -4,7 +4,7 @@ export default function About() {
       <h3 className="smallbadge">Om oss</h3>
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:ml-12  lg:flex lg:flex-col lg:justify-center">
-          <h1 className="font-bold text-4xl itemcontent text-black">
+          <h1 className="font-bold text-4xl itemcontentspacing text-black">
             Vi leverer de beste ingrediensene til våre pålitelige matelskere
           </h1>
           <p className="text-secondarytextcolor mt-3">

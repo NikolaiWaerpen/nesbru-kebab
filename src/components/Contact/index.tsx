@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <div>
       <h3 className="smallbadge">Kontakt oss</h3>
-      <ul className="itemcontent">
+      <ul className="itemcontentspacing">
         <li className="menuitemspacing">
           <FontAwesomeIcon
             icon={faMapMarkerAlt}

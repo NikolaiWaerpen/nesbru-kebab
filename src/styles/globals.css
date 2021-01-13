@@ -35,7 +35,7 @@ html {
   @apply font-bold text-2xl mb-3;
 }
 
-.itemcontent {
+.itemcontentspacing {
   @apply mt-6;
 }
 
@@ -61,4 +61,12 @@ html {
 
 .menutextcolor2 {
   @apply text-gray-500;
+}
+
+.burgerandgrillimages {
+  @apply overflow-hidden object-cover itemcontentspacing rounded-r-3xl block;
+}
+
+.pizzaimage {
+  @apply overflow-hidden object-cover itemcontentspacing rounded-l-3xl block;
 }
