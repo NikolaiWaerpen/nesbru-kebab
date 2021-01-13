@@ -5,19 +5,18 @@ import GrillItem from "./GrillItem";
 
 export default function Menu() {
   return (
-    <div>
-      <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block">
-        Meny
-      </h3>
+    <div className="bg-offblack pt-6 pb-16">
+      {/* <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block mx-6"> */}
+      <h3 className="invertedsmallbadge mx-6">Meny</h3>
       <div>
         <div className="lg:flex">
           <img
             src="/images/burger.jpg"
             alt="pizza"
-            className="lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent hidden lg:block"
+            className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
           />
-          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12 lg:w-screen/2 lg:h-screen/2 bg-themecolor1">
-            <h2 className="font-bold">Burgermeny</h2>
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
+            <h2 className="font-bold text-offwhite">Burgermeny</h2>
             {BURGERMENU.map((hamburger) => (
               <BurgerItem
                 item={hamburger.name}
@@ -29,32 +28,36 @@ export default function Menu() {
           </div>
         </div>
 
-        <div>
+        <div className="lg:flex lg:flex-row-reverse mt-16">
           <img
             src="/images/pizza.jpg"
             alt="pizza"
-            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+            className="hidden lg:block lg:w-screen/2 lg:max-h-full overflow-hidden object-cover itemcontent rounded-l-3xl"
           />
-          <h2 className="font-bold">Pizzameny</h2>
-          {PIZZAMENU.map((pizza) => (
-            <PizzaItem
-              name={pizza.name}
-              description={pizza.description}
-              price={pizza.price}
-            />
-          ))}
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
+            <h2 className="font-bold text-offwhite">Pizzameny</h2>
+            {PIZZAMENU.map((pizza) => (
+              <PizzaItem
+                name={pizza.name}
+                description={pizza.description}
+                price={pizza.price}
+              />
+            ))}
+          </div>
         </div>
 
-        <div>
+        <div className="lg:flex mt-16">
           <img
             src="/images/kebab.png"
             alt="pizza"
-            className="max-w-screen-805 h-screen/2 object-cover itemcontent"
+            className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
           />
-          <h2 className="font-bold">Grillmeny</h2>
-          {GRILLMENU.map((grillitem) => (
-            <GrillItem name={grillitem.name} price={grillitem.price} />
-          ))}
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
+            <h2 className="font-bold text-offwhite">Grillmeny</h2>
+            {GRILLMENU.map((grillitem) => (
+              <GrillItem name={grillitem.name} price={grillitem.price} />
+            ))}
+          </div>
         </div>
       </div>
     </div>
