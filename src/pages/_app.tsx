@@ -66,7 +66,10 @@ export default function App({ Component, pageProps }: AppProps) {
                 <FontAwesomeIcon icon={faBars} className="text-3xl" />
               )}
             </button>
-            <a href="#" className="block ml-5">
+            <a
+              href="https://www.facebook.com/NesbruKebab"
+              className="block ml-5"
+            >
               <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
             </a>
           </div>
