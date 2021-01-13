@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-scroll";
 
 export default function Banner() {
   return (
@@ -9,7 +9,7 @@ export default function Banner() {
         className="w-screen max-h-screen object-cover"
       />
       <div className="bg-dropdown">
-        <Link href="#menu">
+        <Link to="menu" smooth={true} duration={1000}>
           <button className="button">Se meny</button>
         </Link>
       </div>
