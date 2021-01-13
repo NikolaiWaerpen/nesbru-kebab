@@ -70,8 +70,13 @@ export default function App({ Component, pageProps }: AppProps) {
                 <FontAwesomeIcon icon={faBars} className="text-3xl" />
               )}
             </button>
-            <Link to="social" smooth={true} duration={SCROLL_DURATION}>
-              <a className="block ml-5">
+            <Link
+              to="social"
+              smooth={true}
+              duration={SCROLL_DURATION}
+              className="ml-5"
+            >
+              <a className="block">
                 <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
               </a>
             </Link>
