@@ -82,31 +82,31 @@ export default function App({ Component, pageProps }: AppProps) {
             className={`lg:flex lg:justify-center uppercase py-1 paddingx 
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
-            <li className="navoptions">
-              <Link href="#">
+            <Link href="#">
+              <li className="navoptions">
                 <a onClick={closeNav}>Hjem</a>
-              </Link>
-            </li>
-            <li className="navoptions">
-              <Link href="#about">
+              </li>
+            </Link>
+            <Link href="#about">
+              <li className="navoptions">
                 <a onClick={closeNav}>Om oss</a>
-              </Link>
-            </li>
-            <li className="navoptions">
-              <Link href="#hours">
+              </li>
+            </Link>
+            <Link href="#hours">
+              <li className="navoptions">
                 <a onClick={closeNav}>Åpningstider</a>
-              </Link>
-            </li>
-            <li className="navoptions">
-              <Link href={"#menu"}>
+              </li>
+            </Link>
+            <Link href={"#menu"}>
+              <li className="navoptions">
                 <a onClick={closeNav}>Meny</a>
-              </Link>
-            </li>
-            <li className="navoptions">
-              <Link href="#contact">
+              </li>
+            </Link>
+            <Link href="#contact">
+              <li className="navoptions">
                 <a onClick={closeNav}>Kontakt oss</a>
-              </Link>
-            </li>
+              </li>
+            </Link>
           </ul>
         </div>
       </nav>
