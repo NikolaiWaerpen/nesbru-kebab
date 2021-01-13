@@ -16,7 +16,7 @@ export default function Menu() {
             className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
           />
           <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
-            <h2 className="font-bold text-offwhite">Burgermeny</h2>
+            <h2 className="font-bold menutextcolorheader">Burgermeny</h2>
             {BURGERMENU.map((hamburger) => (
               <BurgerItem
                 item={hamburger.name}
@@ -35,7 +35,7 @@ export default function Menu() {
             className="hidden lg:block lg:w-screen/2 lg:max-h-full overflow-hidden object-cover itemcontent rounded-l-3xl"
           />
           <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
-            <h2 className="font-bold text-offwhite">Pizzameny</h2>
+            <h2 className="font-bold menutextcolorheader">Pizzameny</h2>
             {PIZZAMENU.map((pizza) => (
               <PizzaItem
                 name={pizza.name}
@@ -53,7 +53,7 @@ export default function Menu() {
             className="hidden lg:block lg:w-screen/2 lg:h-screen/2 overflow-hidden object-cover itemcontent rounded-r-3xl"
           />
           <div className="lg:flex lg:flex-col lg:justify-center lg:ml-12">
-            <h2 className="font-bold text-offwhite">Grillmeny</h2>
+            <h2 className="font-bold menutextcolorheader">Grillmeny</h2>
             {GRILLMENU.map((grillitem) => (
               <GrillItem name={grillitem.name} price={grillitem.price} />
             ))}

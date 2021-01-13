@@ -50,3 +50,15 @@ html {
 .invertedsmallbadge {
   @apply rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-offblack bg-offwhite inline-block;
 }
+
+.menutextcolorheader {
+  @apply text-offwhite;
+}
+
+.menutextcolor1 {
+  @apply text-gray-300;
+}
+
+.menutextcolor2 {
+  @apply text-gray-500;
+}
