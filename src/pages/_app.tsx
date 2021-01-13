@@ -83,31 +83,41 @@ export default function App({ Component, pageProps }: AppProps) {
             className={`lg:flex lg:justify-center uppercase py-1 paddingx 
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
-            <Link to="banner" smooth={true} duration={1000}>
-              <li className="navoptions">
-                <a onClick={closeNav}>Hjem</a>
-              </li>
-            </Link>
-            <Link to="about" smooth={true} duration={1000}>
-              <li className="navoptions">
-                <a onClick={closeNav}>Om oss</a>
-              </li>
-            </Link>
-            <Link to="hours" smooth={true} duration={1000}>
-              <li className="navoptions">
-                <a onClick={closeNav}>Åpningstider</a>
-              </li>
-            </Link>
-            <Link to="menu" smooth={true} duration={1000}>
-              <li className="navoptions">
-                <a onClick={closeNav}>Meny</a>
-              </li>
-            </Link>
-            <Link to="contact" smooth={true} duration={1000}>
-              <li className="navoptions">
-                <a onClick={closeNav}>Kontakt oss</a>
-              </li>
-            </Link>
+            <div>
+              <Link to="banner" smooth={true} duration={1000}>
+                <li className="navoptions">
+                  <a onClick={closeNav}>Hjem</a>
+                </li>
+              </Link>
+            </div>
+            <div>
+              <Link to="about" smooth={true} duration={1000}>
+                <li className="navoptions">
+                  <a onClick={closeNav}>Om oss</a>
+                </li>
+              </Link>
+            </div>
+            <div>
+              <Link to="hours" smooth={true} duration={1000}>
+                <li className="navoptions">
+                  <a onClick={closeNav}>Åpningstider</a>
+                </li>
+              </Link>
+            </div>
+            <div>
+              <Link to="menu" smooth={true} duration={1000}>
+                <li className="navoptions">
+                  <a onClick={closeNav}>Meny</a>
+                </li>
+              </Link>
+            </div>
+            <div>
+              <Link to="contact" smooth={true} duration={1000}>
+                <li className="navoptions">
+                  <a onClick={closeNav}>Kontakt oss</a>
+                </li>
+              </Link>
+            </div>
           </ul>
         </div>
       </nav>
