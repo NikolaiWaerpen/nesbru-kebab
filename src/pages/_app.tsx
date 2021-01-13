@@ -1,7 +1,8 @@
 import type { AppProps } from "next/app";
-import Link from "next/link";
+// import Link from "next/link";
 import "../styles/globals.css";
 import Home from ".";
+import { Link } from "react-scroll";
 
 import { useState } from "react";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
@@ -82,27 +83,27 @@ export default function App({ Component, pageProps }: AppProps) {
             className={`lg:flex lg:justify-center uppercase py-1 paddingx 
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
-            <Link href="#">
+            <Link to="banner" smooth={true} duration={1000}>
               <li className="navoptions">
                 <a onClick={closeNav}>Hjem</a>
               </li>
             </Link>
-            <Link href="#about">
+            <Link to="about" smooth={true} duration={1000}>
               <li className="navoptions">
                 <a onClick={closeNav}>Om oss</a>
               </li>
             </Link>
-            <Link href="#hours">
+            <Link to="hours" smooth={true} duration={1000}>
               <li className="navoptions">
                 <a onClick={closeNav}>Åpningstider</a>
               </li>
             </Link>
-            <Link href={"#menu"}>
+            <Link to="menu" smooth={true} duration={1000}>
               <li className="navoptions">
                 <a onClick={closeNav}>Meny</a>
               </li>
             </Link>
-            <Link href="#contact">
+            <Link to="contact" smooth={true} duration={1000}>
               <li className="navoptions">
                 <a onClick={closeNav}>Kontakt oss</a>
               </li>

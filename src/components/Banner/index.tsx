@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Banner() {
   return (
-    <div>
+    <div id="banner">
       <img
         src="/images/flour-big.jpg"
         alt="logo picture/burger"
