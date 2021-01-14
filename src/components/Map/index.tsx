@@ -13,7 +13,7 @@ type FontAwesomeIcon = {
 export default function Map() {
   return (
     <div>
-      <div className="w-screen h-screen/2 bg-themecolor1">
+      <div className="w-full h-screen/2 bg-themecolor1">
         <GoogleMapReact
           bootstrapURLKeys={{ key: MAP_KEY }}
           defaultCenter={MAP_DETAILS.center}
