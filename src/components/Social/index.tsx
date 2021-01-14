@@ -6,7 +6,7 @@ export default function Social() {
     <div className="flex">
       <a
         href="https://www.facebook.com/NesbruKebab"
-        className="hover:text-themecolor1 hover:cursor-pointer flex"
+        className="texthovereffect flex"
       >
         <FontAwesomeIcon
           icon={faFacebookSquare}

@@ -25,6 +25,10 @@ body {
   @apply flex rounded-full py-4 px-10 uppercase text-xs lg:text-sm tracking-wider border-2 hover:border-white hover:bg-transparent text-offwhite bg-themecolor1 border-themecolor1 transition ease-out duration-500;
 }
 
+.texthovereffect {
+  @apply hover:text-themecolor1 cursor-pointer transition ease-out duration-300;
+}
+
 .itemcontainer {
   @apply pt-16;
 }

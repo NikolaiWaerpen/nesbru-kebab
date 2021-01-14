@@ -54,9 +54,9 @@ export default function App({ Component, pageProps }: AppProps) {
               <a
                 className={`${
                   scrolledDown ? "text-2xl" : "text-4xl"
-                } font-bold`}
+                } font-bold texthovereffect`}
               >
-                Jevelin
+                (temp)
               </a>
             </Link>
           </div>
@@ -65,9 +65,15 @@ export default function App({ Component, pageProps }: AppProps) {
           <div className="lg:hidden flex w-76px justify-center">
             <button className="block" onClick={() => openNav()}>
               {navOpen ? (
-                <FontAwesomeIcon icon={faTimes} className="text-3xl" />
+                <FontAwesomeIcon
+                  icon={faTimes}
+                  className="text-3xl texthovereffect"
+                />
               ) : (
-                <FontAwesomeIcon icon={faBars} className="text-3xl" />
+                <FontAwesomeIcon
+                  icon={faBars}
+                  className="text-3xl texthovereffect"
+                />
               )}
             </button>
             <Link
@@ -77,7 +83,10 @@ export default function App({ Component, pageProps }: AppProps) {
               className="ml-5"
             >
               <a className="block">
-                <FontAwesomeIcon icon={faFacebook} className="text-3xl" />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  className="text-3xl texthovereffect"
+                />
               </a>
             </Link>
           </div>
@@ -97,35 +106,45 @@ export default function App({ Component, pageProps }: AppProps) {
             <div>
               <Link to="home" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
-                  <a onClick={closeNav}>Hjem</a>
+                  <a onClick={closeNav} className="texthovereffect">
+                    Hjem
+                  </a>
                 </li>
               </Link>
             </div>
             <div>
               <Link to="about" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
-                  <a onClick={closeNav}>Om oss</a>
+                  <a onClick={closeNav} className="texthovereffect">
+                    Om oss
+                  </a>
                 </li>
               </Link>
             </div>
             <div>
               <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
-                  <a onClick={closeNav}>Åpningstider</a>
+                  <a onClick={closeNav} className="texthovereffect">
+                    Åpningstider
+                  </a>
                 </li>
               </Link>
             </div>
             <div>
               <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
-                  <a onClick={closeNav}>Meny</a>
+                  <a onClick={closeNav} className="texthovereffect">
+                    Meny
+                  </a>
                 </li>
               </Link>
             </div>
             <div>
               <Link to="contact" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
-                  <a onClick={closeNav}>Kontakt oss</a>
+                  <a onClick={closeNav} className="texthovereffect">
+                    Kontakt oss
+                  </a>
                 </li>
               </Link>
             </div>
