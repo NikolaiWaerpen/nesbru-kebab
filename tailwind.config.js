@@ -18,6 +18,9 @@ module.exports = {
       height: {
         "screen/2": "50vh",
       },
+      fontFamily: {
+        body: ["Jost"],
+      },
     },
   },
   variants: {
