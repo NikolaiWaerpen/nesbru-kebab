@@ -3,8 +3,8 @@ import { SCROLL_DURATION } from "../../../consts";
 
 export default function Banner() {
   return (
-    <div className="bg-themecolor1">
-      <div className="relative">
+    <div>
+      <div className="relative z-0">
         <img
           src="/images/flour-big.jpg"
           alt="logo picture/burger"

@@ -34,7 +34,6 @@ export default function Home() {
       <div className="itemcontainer">
         <Signature />
       </div>
-
       <Map />
     </div>
   );

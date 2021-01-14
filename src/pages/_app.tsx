@@ -36,7 +36,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <nav
         className={`${
           scrolledDown || navOpen ? "text-black" : "text-white"
-        } w-screen fixed`}
+        } w-screen fixed z-50`}
       >
         {/* Container for title and burger menu */}
         <div
