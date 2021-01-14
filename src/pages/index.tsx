@@ -6,6 +6,7 @@ import Map from "../components/Map";
 import Menu from "../components/Menu";
 import Signature from "../components/Signature";
 import Social from "../components/Social";
+import Test from "../components/Test";
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <div className="itemcontainer">
         <Signature />
       </div>
+
       <Map />
     </div>
   );

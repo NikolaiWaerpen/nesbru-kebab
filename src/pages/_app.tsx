@@ -32,7 +32,7 @@ export default function App({ Component, pageProps }: AppProps) {
     window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className="relative">
+    <div>
       <nav
         className={`${
           scrolledDown || navOpen ? "text-black" : "text-white"
