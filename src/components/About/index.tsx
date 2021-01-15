@@ -23,7 +23,7 @@ export default function About() {
               ut penger av virksomheten. Jeg hadde tatt opp lån av familien og
               satset alt pluss litt til på dette. Jeg vil ikke si at jeg sov
               dårlig om natta, men den eneste grunnen til det er vel at jeg
-              jobbet hele døgnet
+              jobbet hele døgnet.
             </q>
           </div>
           <div className="flex justify-end">
