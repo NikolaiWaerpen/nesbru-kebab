@@ -13,14 +13,14 @@ export default function Home() {
     <div id={"home"}>
       <Banner />
       <div>
-        <div id={"about"} className="itemcontainer mx-6 lg:mx-16">
-          <About />
-        </div>
         <div id={"hours"} className="itemcontainer mx-6 lg:mx-16">
           <Hours />
         </div>
         <div id={"menu"} className="itemcontainer">
           <Menu />
+        </div>
+        <div id={"about"} className="itemcontainer mx-6 lg:mx-16">
+          <About />
         </div>
         <div className="mx-6 sm:mx-44 lg:mx-16 lg:flex lg:justify-around">
           <div id={"contact"} className="itemcontainer">

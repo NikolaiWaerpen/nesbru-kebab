@@ -56,7 +56,7 @@ export default function App({ Component, pageProps }: AppProps) {
                   scrolledDown ? "text-2xl" : "text-4xl"
                 } font-bold texthovereffect`}
               >
-                {scrolledDown ? (
+                {scrolledDown || navOpen ? (
                   <img
                     src="/images/nesbrukebab/nesbrukebabblacktext.png"
                     alt="logo picture/burger"
