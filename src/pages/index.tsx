@@ -23,7 +23,7 @@ export default function Home() {
           <Menu />
         </div>
         <div className="mx-6 sm:mx-44 lg:mx-16 lg:flex lg:justify-around">
-          <div id={"contact"} className="itemcontainer ">
+          <div id={"contact"} className="itemcontainer">
             <Contact />
           </div>
           <div id={"social"} className="itemcontainer lg:mt-12">

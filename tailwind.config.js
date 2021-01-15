@@ -19,7 +19,17 @@ module.exports = {
         805: "805px",
       },
       height: {
+        screen75: "75vh",
+        screen65: "65vh",
+        screen63: "63vh",
+        screen61: "61vh",
+        screen60: "60vh",
+        screen58: "58vh",
+        screen55: "55vh",
         "screen/2": "50vh",
+        "screen/3": "calc(100vh / 3)",
+        "screen/4": "calc(100vh / 4)",
+        "screen/5": "calc(100vh / 5)",
       },
       fontFamily: {
         body: ["Jost"],

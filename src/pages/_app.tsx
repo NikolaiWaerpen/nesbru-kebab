@@ -56,12 +56,24 @@ export default function App({ Component, pageProps }: AppProps) {
                   scrolledDown ? "text-2xl" : "text-4xl"
                 } font-bold texthovereffect`}
               >
-                (temp)
+                {scrolledDown ? (
+                  <img
+                    src="/images/nesbrukebab/nesbrukebabblacktext.png"
+                    alt="logo picture/burger"
+                    className="max-w-xs max-h-12 lg:max-h-16 object-cover"
+                  />
+                ) : (
+                  <img
+                    src="/images/nesbrukebab/nesbrukebabwhitetext.png"
+                    alt="logo picture/burger"
+                    className="max-w-xs max-h-12 lg:max-h-16 object-cover"
+                  />
+                )}
               </a>
             </Link>
           </div>
 
-          {/* Burger menu */}
+          {/* Icons */}
           <div className="lg:hidden flex w-76px justify-center">
             <button className="block" onClick={() => openNav()}>
               {navOpen ? (
