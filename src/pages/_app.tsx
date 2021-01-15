@@ -60,13 +60,13 @@ export default function App({ Component, pageProps }: AppProps) {
                   <img
                     src="/images/nesbrukebab/nesbrukebabblacktext.png"
                     alt="logo picture/burger"
-                    className="max-w-xs max-h-12 lg:max-h-16 object-cover"
+                    className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                   />
                 ) : (
                   <img
                     src="/images/nesbrukebab/nesbrukebabwhitetext.png"
                     alt="logo picture/burger"
-                    className="max-w-xs max-h-12 lg:max-h-16 object-cover"
+                    className="max-w-xs max-h-14 lg:max-h-16 object-cover"
                   />
                 )}
               </a>
@@ -119,7 +119,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <Link to="home" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav} className="texthovereffect">
-                    Hjem
+                    Til toppen
                   </a>
                 </li>
               </Link>
@@ -128,16 +128,7 @@ export default function App({ Component, pageProps }: AppProps) {
               <Link to="about" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav} className="texthovereffect">
-                    Om oss
-                  </a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Åpningstider
+                    Kebabkongen
                   </a>
                 </li>
               </Link>
@@ -152,10 +143,19 @@ export default function App({ Component, pageProps }: AppProps) {
               </Link>
             </div>
             <div>
+              <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
+                <li className="navoptions">
+                  <a onClick={closeNav} className="texthovereffect">
+                    Åpningstider
+                  </a>
+                </li>
+              </Link>
+            </div>
+            <div>
               <Link to="contact" smooth={true} duration={SCROLL_DURATION}>
                 <li className="navoptions">
                   <a onClick={closeNav} className="texthovereffect">
-                    Kontakt oss
+                    Finn oss
                   </a>
                 </li>
               </Link>

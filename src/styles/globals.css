@@ -24,7 +24,7 @@ body {
 }
 
 .itemcontainer {
-  @apply pt-16;
+  @apply pt-20;
 }
 
 .itemheader {
