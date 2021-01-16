@@ -14,7 +14,7 @@ export default function About() {
           <img
             src="/images/nesbrukebabfolk.jpg"
             alt="logo picture/burger"
-            className="w-full lg:h-screen75 object-cover rounded-xl mt-6 shadow-sm"
+            className="w-full lg:h-screen75 object-cover rounded-xl mt-6 shadow-sm border-b-2 border-themecolor1"
             // className="w-screen max-h-screen lg:h-screen overflow-hidden object-cover rounded-3xl mt-5"
           />
           <div className="mt-6">

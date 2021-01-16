@@ -19,7 +19,7 @@ export default function Footer() {
         <img
           src="/images/redandgold.png"
           alt="review"
-          className="w-full h-40 object-contain"
+          className="w-full h-36 object-contain"
         />
       </div>
       <div className="flex justify-center">
