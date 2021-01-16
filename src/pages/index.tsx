@@ -32,10 +32,12 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="itemcontainer">
+      {/* <div className="itemcontainer">
         <Signature />
+      </div> */}
+      <div className="itemcontainer">
+        <Map />
       </div>
-      <Map />
       <Footer />
     </div>
   );

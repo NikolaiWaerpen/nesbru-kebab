@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="bg-offblack text-grayonblack px-6">
       <div>
-        <h3 className="invertedsmallbadge mt-6">Recognition</h3>
+        <h3 className="invertedsmallbadge mt-6">Anerkjennelse</h3>
         <p className="mt-6">
           Det er mye hardt arbeid og engasjement for å oppfylle dine høyeste
           forventninger og til og med overgå dem. Vi er stolte og takknemlige
@@ -30,7 +30,7 @@ export default function Footer() {
       </div>
       <div className="flex justify-center py-6">
         <span>Developed by&nbsp;</span>
-        <a>Nikolai Wærpen</a>
+        <a className="text-themecolor1">Nikolai Wærpen</a>
       </div>
     </div>
   );
