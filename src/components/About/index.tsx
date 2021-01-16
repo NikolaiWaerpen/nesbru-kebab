@@ -7,7 +7,7 @@ export default function About() {
           <h1 className="font-bold text-2xl lg:text-5xl text-black">
             Kebabkongen på Nesbru
           </h1>
-          <p className="text-gray-400 mt-6">
+          <p className="text-gray-500 mt-6">
             Alle elsker historien om en som begynte med to tomme hender, og
             jobbet seg opp til kongestatus i sin bransje
           </p>
@@ -27,7 +27,7 @@ export default function About() {
             </q>
           </div>
           <div className="flex justify-end">
-            <span className="text-gray-500">- Mohammed Afzaal</span>
+            <span className="text-gray-400">- Mohammed Afzaal</span>
           </div>
         </div>
       </div>

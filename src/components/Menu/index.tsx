@@ -9,6 +9,19 @@ export default function Menu() {
       {/* <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block mx-6"> */}
       <h3 className="invertedsmallbadge mx-6">Meny</h3>
       <div className="mx-6 lg:mx-0">
+        <div className="lg:flex mt-6">
+          <img
+            src="/images/kebab.png"
+            alt="pizza"
+            className="itemcontentspacing lg:block lg:w-screen/2 lg:h-screen/2 lg:overflow-hidden lg:object-cover rounded-xl lg:rounded-r-3xl shadow-sm border-b-2 border-themecolor1"
+          />
+          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6 mt-6 lg:mt-0">
+            <h2 className="font-bold menutextcolorheader">Grillmeny</h2>
+            {GRILLMENU.map((grillitem) => (
+              <GrillItem name={grillitem.name} price={grillitem.price} />
+            ))}
+          </div>
+        </div>
         <div className="lg:flex">
           <img
             src="/images/burger.jpg"
@@ -28,7 +41,7 @@ export default function Menu() {
           </div>
         </div>
 
-        <div className="lg:flex lg:flex-row-reverse mt-16">
+        <div className="lg:flex lg:flex-row-reverse mt-6">
           <img
             src="/images/pizza.jpg"
             alt="pizza"
@@ -42,20 +55,6 @@ export default function Menu() {
                 description={pizza.description}
                 price={pizza.price}
               />
-            ))}
-          </div>
-        </div>
-
-        <div className="lg:flex mt-16">
-          <img
-            src="/images/kebab.png"
-            alt="pizza"
-            className="itemcontentspacing lg:block lg:w-screen/2 lg:h-screen/2 lg:overflow-hidden lg:object-cover rounded-xl lg:rounded-r-3xl shadow-sm border-b-2 border-themecolor1"
-          />
-          <div className="lg:flex lg:flex-col lg:justify-center lg:ml-20 lg:w-1/6 mt-6 lg:mt-0">
-            <h2 className="font-bold menutextcolorheader">Grillmeny</h2>
-            {GRILLMENU.map((grillitem) => (
-              <GrillItem name={grillitem.name} price={grillitem.price} />
             ))}
           </div>
         </div>
