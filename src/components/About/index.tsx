@@ -1,10 +1,10 @@
 export default function About() {
   return (
     <div>
-      <h3 className="smallbadge">Kebabkongen</h3>
+      {/* <h3 className="smallbadge">Kebabkongen</h3> */}
       <div className="lg:flex lg:flex-row-reverse">
         <div className="lg:ml-12  lg:flex lg:flex-col lg:justify-center">
-          <h1 className="font-bold text-2xl lg:text-5xl itemcontentspacing text-black">
+          <h1 className="font-bold text-2xl lg:text-5xl text-black">
             Kebabkongen på Nesbru
           </h1>
           <p className="text-gray-400 mt-6">
