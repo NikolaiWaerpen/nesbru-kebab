@@ -5,7 +5,7 @@ import GrillItem from "./GrillItem";
 
 export default function Menu() {
   return (
-    <div className="bg-offblack pt-6 pb-6">
+    <div className="bg-offblack pt-6 pb-6 shadow-xl">
       {/* <h3 className="rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-white bg-black inline-block mx-6"> */}
       <h3 className="invertedsmallbadge mx-6">Meny</h3>
       <div className="mx-6 lg:mx-0">

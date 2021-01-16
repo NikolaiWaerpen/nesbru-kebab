@@ -9,8 +9,8 @@ export default function Contact() {
   return (
     <div>
       <h3 className="smallbadge">Kontakt oss</h3>
-      <ul className="bg-gray-100 rounded-xl px-4 py-3 mt-6">
-        <li className="menuitemspacing">
+      <ul className="bg-gray-100 rounded-xl px-4 py-3 mt-6 shadow-lg">
+        <li>
           <FontAwesomeIcon
             icon={faMapMarkerAlt}
             className="text-themecolor1  ml-0.5"

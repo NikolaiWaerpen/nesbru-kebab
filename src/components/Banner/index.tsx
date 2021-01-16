@@ -3,7 +3,7 @@ import { SCROLL_DURATION } from "../../../consts";
 
 export default function Banner() {
   return (
-    <div className="relative z-0 bg-offblack">
+    <div className="relative z-0 bg-offblack shadow-xl">
       <img
         src="/images/flour.jpg"
         alt="background flour"
