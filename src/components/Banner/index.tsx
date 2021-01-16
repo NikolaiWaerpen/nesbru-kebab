@@ -5,9 +5,9 @@ export default function Banner() {
   return (
     <div className="relative z-0 bg-offblack">
       <img
-        src="/images/flour-big.jpg"
+        src="/images/flour.jpg"
         alt="background flour"
-        className="w-screen h-screen75 lg:h-screen object-cover opacity-25"
+        className="w-screen h-screen75 lg:h-screen object-cover object-center opacity-25"
       />
       {/* <div className="absolute inset-0 flex justify-center top-48 z-20">
         <h1 className="text-4xl lg:text-10xl text-offwhite font-extrabold tracking-wider uppercase">
@@ -19,7 +19,7 @@ export default function Banner() {
           src="/images/transparentkebab.png"
           // src="/images/nesbrukebab/nesbrukebabwhite.png"
           alt="logo picture/burger"
-          className="w-full h-screen29 object-contain lg:h-screen lg:object-contain opacity-90"
+          className="w-full h-screen29 object-contain lg:h-screen lg:object-contain opacity-80"
         />
       </div>
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">

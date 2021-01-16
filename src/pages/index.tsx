@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import Signature from "../components/Signature";
 import Social from "../components/Social";
 import Test from "../components/Test";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <Signature />
       </div>
       <Map />
+      <Footer />
     </div>
   );
 }
