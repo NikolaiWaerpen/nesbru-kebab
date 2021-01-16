@@ -9,7 +9,11 @@ export default function Contact() {
   return (
     <div>
       <h3 className="smallbadge">Kontakt oss</h3>
+<<<<<<< HEAD
       <ul className="bg-gray-100 rounded-xl px-4 py-3 mt-6">
+=======
+      <ul className="bg-gray-100 rounded-xl px-4 py-3 mt-6 shadow-lg">
+>>>>>>> development
         <li>
           <FontAwesomeIcon
             icon={faMapMarkerAlt}

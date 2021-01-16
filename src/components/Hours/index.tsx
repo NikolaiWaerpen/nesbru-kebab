@@ -2,7 +2,7 @@ export default function Hours() {
   return (
     <div>
       <h3 className="smallbadge">Våre åpningstider</h3>
-      <div className="bg-gray-100 rounded-xl px-4 py-3 mt-6">
+      <div className="bg-gray-100 rounded-xl px-4 py-3 mt-6 shadow-lg">
         <div className="flex justify-center mt-6">
           <img
             src="/images/nesbrukebab/nesbrukebabblacktext.png"

@@ -7,6 +7,7 @@ import Menu from "../components/Menu";
 import Signature from "../components/Signature";
 import Social from "../components/Social";
 import Test from "../components/Test";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -31,10 +32,13 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="itemcontainer">
+      {/* <div className="itemcontainer">
         <Signature />
+      </div> */}
+      <div className="itemcontainer">
+        <Map />
       </div>
-      <Map />
+      <Footer />
     </div>
   );
 }

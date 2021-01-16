@@ -11,8 +11,9 @@ module.exports = {
         dropdown: "#232323",
         dropdownborder: "#303030",
         offwhite: "#fbf8f6",
-        offblack: "#191a1d",
+        offblack: "#151515", //191a1d
         secondarytextcolor: "#52525B",
+        grayonblack: "#777777",
       },
       screens: {
         550: "550px",

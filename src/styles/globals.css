@@ -40,7 +40,7 @@ body {
 }
 
 .smallbadge {
-  @apply rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-offwhite bg-black inline-block;
+  @apply rounded-lg py-1 px-3 uppercase text-xs lg:text-sm font-semibold tracking-wider text-offwhite bg-black inline-block shadow-md;
 }
 
 .invertedsmallbadge {
