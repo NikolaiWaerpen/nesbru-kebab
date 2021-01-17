@@ -1,5 +1,3 @@
-import { POPEFFECT } from "../../../consts";
-
 export default function About() {
   return (
     <div>
