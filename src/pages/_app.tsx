@@ -13,6 +13,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function App({ Component, pageProps }: AppProps) {
   const [navOpen, setNavOpen] = useState(false);
   const [scrolledDown, setScrolledDown] = useState(false);
+  const [screenLarge, setScreenLarge] = useState(false);
 
   const openNav = () => {
     if (navOpen) setNavOpen(false);
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
 
   const closeNav = () => {
     setNavOpen(false);
+    console.log("fired");
   };
 
   const changeBackground = () => {
@@ -28,8 +30,15 @@ export default function App({ Component, pageProps }: AppProps) {
     else setScrolledDown(false);
   };
 
-  if (typeof window !== "undefined")
+  const isScreenLarge = () => {
+    if (window.innerWidth > 1023) setScreenLarge(true);
+    else setScreenLarge(false);
+  };
+
+  if (typeof window !== "undefined") {
     window.addEventListener("scroll", changeBackground);
+    window.addEventListener("resize", isScreenLarge);
+  }
 
   return (
     <div>
@@ -74,94 +83,99 @@ export default function App({ Component, pageProps }: AppProps) {
           </div>
 
           {/* Icons */}
-          <div className="lg:hidden flex w-76px justify-center">
-            <button className="block" onClick={() => openNav()}>
-              {navOpen ? (
-                <FontAwesomeIcon
-                  icon={faTimes}
-                  className="text-3xl texthovereffect"
-                />
-              ) : (
-                <FontAwesomeIcon
-                  icon={faBars}
-                  className="text-3xl texthovereffect"
-                />
-              )}
-            </button>
-            <Link
-              to="social"
-              smooth={true}
-              duration={SCROLL_DURATION}
-              className="ml-5"
-            >
-              <a className="block">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  className="text-3xl texthovereffect"
-                />
-              </a>
-            </Link>
-          </div>
+          {!screenLarge && (
+            <div className="flex w-76px justify-center">
+              <button className="block" onClick={() => openNav()}>
+                {navOpen ? (
+                  <FontAwesomeIcon
+                    icon={faTimes}
+                    className="text-3xl texthovereffect"
+                  />
+                ) : (
+                  <FontAwesomeIcon
+                    icon={faBars}
+                    className="text-3xl texthovereffect"
+                  />
+                )}
+              </button>
+              <Link
+                to="social"
+                smooth={true}
+                duration={SCROLL_DURATION}
+                className="ml-5"
+              >
+                <a className="block">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    className="text-3xl texthovereffect"
+                  />
+                </a>
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* List */}
-        <div
-          className={`
-          ${navOpen ? "block text-white bg-dropdown" : "hidden lg:block"}
+        {/* if on mobile and navOpen */}
+        {navOpen && !screenLarge && (
+          <div
+            className={`
+          block text-white bg-dropdown
           ${scrolledDown && !navOpen && "bg-offwhite"}
           ${scrolledDown && navOpen && "bg-dropdown"}`}
-        >
-          <ul
-            className={`lg:flex lg:justify-center uppercase py-1 paddingx 
-            ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
           >
-            <div>
-              <Link to="home" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Til toppen
-                  </a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link to="about" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Kebabkongen
-                  </a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Meny
-                  </a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Åpningstider
-                  </a>
-                </li>
-              </Link>
-            </div>
-            <div>
-              <Link to="contact" smooth={true} duration={SCROLL_DURATION}>
-                <li className="navoptions">
-                  <a onClick={closeNav} className="texthovereffect">
-                    Finn oss
-                  </a>
-                </li>
-              </Link>
-            </div>
-          </ul>
-        </div>
+            <ul
+              className={`lg:flex lg:justify-center uppercase py-1 paddingx 
+            ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
+            >
+              <div>
+                <Link to="home" smooth={true} duration={SCROLL_DURATION}>
+                  <li className="navoptions">
+                    <a onClick={closeNav} className="texthovereffect">
+                      Til toppen
+                    </a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link to="about" smooth={true} duration={SCROLL_DURATION}>
+                  <li className="navoptions">
+                    <a onClick={closeNav} className="texthovereffect">
+                      Kebabkongen
+                    </a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link to="menu" smooth={true} duration={SCROLL_DURATION}>
+                  <li className="navoptions">
+                    <a onClick={closeNav} className="texthovereffect">
+                      Meny
+                    </a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link to="hours" smooth={true} duration={SCROLL_DURATION}>
+                  <li className="navoptions">
+                    <a onClick={closeNav} className="texthovereffect">
+                      Åpningstider
+                    </a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link to="contact" smooth={true} duration={SCROLL_DURATION}>
+                  <li className="navoptions">
+                    <a onClick={closeNav} className="texthovereffect">
+                      Finn oss
+                    </a>
+                  </li>
+                </Link>
+              </div>
+            </ul>
+          </div>
+        )}
       </nav>
       {/* App content */}
       <Home />
