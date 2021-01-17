@@ -17,7 +17,7 @@ const h2Variant = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 2.2,
+      delay: 1.9,
     },
   },
 };
@@ -28,7 +28,7 @@ const buttonVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 2,
+      delay: 1.7,
     },
   },
 };

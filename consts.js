@@ -225,3 +225,14 @@ exports.POPEFFECT = {
     },
   },
 };
+
+exports.FASTPOPEFFECT = {
+  hidden: { scale: 0 },
+  visible: {
+    scale: 1,
+    transition: {
+      type: "tween",
+      delay: 6,
+    },
+  },
+};
