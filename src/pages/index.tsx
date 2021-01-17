@@ -4,7 +4,6 @@ import Contact from "../components/Contact";
 import Hours from "../components/Hours";
 import Map from "../components/Map";
 import Menu from "../components/Menu";
-import Signature from "../components/Signature";
 import Social from "../components/Social";
 import Test from "../components/Test";
 import Footer from "../components/Footer";
@@ -39,6 +38,7 @@ export default function Home() {
         <Map />
       </div>
       <Footer />
+      <Test />
     </div>
   );
 }
