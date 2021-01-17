@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { SCROLL_DURATION } from "../../../consts";
+import { SCROLL_DURATION, POPEFFECT } from "../../../consts";
 import { motion } from "framer-motion";
 
 const h1Variant = {
@@ -17,7 +17,7 @@ const h2Variant = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 1,
+      delay: 2.2,
     },
   },
 };
@@ -28,7 +28,7 @@ const buttonVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.3,
+      delay: 2,
     },
   },
 };
@@ -67,13 +67,9 @@ export default function Banner() {
           // src="/images/nesbrukebab/nesbrukebabwhite.png"
           alt="logo picture/burger"
           className="w-full h-screen29 object-contain lg:h-screen lg:object-contain opacity-90"
-          initial={{ scale: 0, rotate: 90 }}
-          animate={{ scale: 1, rotate: 0 }}
-          transition={{
-            type: "spring",
-            stiffness: 260,
-            damping: 20,
-          }}
+          variants={POPEFFECT}
+          initial="hidden"
+          animate="visible"
         />
       </div>
       <div className="absolute inset-0 flex justify-center top-3/4 z-40">

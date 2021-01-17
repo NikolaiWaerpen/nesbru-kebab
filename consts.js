@@ -1,7 +1,10 @@
+// Google maps API key
 exports.MAP_KEY = "AIzaSyDLX3fInnzrZVno5pJFpaEbdldeU8vHwKM";
 
+// Scroll library standard
 exports.SCROLL_DURATION = 1000;
 
+// Map
 exports.MAP_DETAILS = {
   center: {
     lat: 59.863891940495954,
@@ -10,6 +13,7 @@ exports.MAP_DETAILS = {
   zoom: 12,
 };
 
+// Menu's
 exports.BURGERMENU = [
   {
     name: "hamburger",
@@ -209,3 +213,15 @@ exports.GRILLMENU = [
     price: 49,
   },
 ];
+
+// Animations
+exports.POPEFFECT = {
+  hidden: { scale: 0 },
+  visible: {
+    scale: 1,
+    transition: {
+      type: "tween",
+      delay: 0.4,
+    },
+  },
+};

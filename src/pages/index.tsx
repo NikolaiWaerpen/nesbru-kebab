@@ -38,7 +38,7 @@ export default function Home() {
         <Map />
       </div>
       <Footer />
-      <Test />
+      {/* <Test /> */}
     </div>
   );
 }
