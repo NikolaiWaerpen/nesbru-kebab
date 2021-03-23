@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import "../styles/globals.css";
 import Home from ".";
 import { Link } from "react-scroll";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { SCROLL_DURATION } from "../../consts";
 import { motion } from "framer-motion";
 
@@ -42,6 +42,10 @@ export default function App({ Component, pageProps }: AppProps) {
     if (window.scrollY >= 10) setScrolledDown(true);
     else setScrolledDown(false);
   };
+
+  useEffect(() => {
+    if (window.innerWidth > 1023) setScreenLarge(true);
+  }, []);
 
   const isScreenLarge = () => {
     if (window.innerWidth > 1023) setScreenLarge(true);
@@ -141,7 +145,7 @@ export default function App({ Component, pageProps }: AppProps) {
             animate="visible"
           >
             <ul
-              className={`lg:flex lg:justify-center uppercase py-1 paddingx 
+              className={`uppercase py-1 paddingx 
             ${navOpen ? "divide-y divide-dropdownborder" : "font-bold pb-3"}`}
             >
               <div>
@@ -206,6 +210,81 @@ export default function App({ Component, pageProps }: AppProps) {
               </div>
             </ul>
           </motion.div>
+        )}
+
+        {/* Screens over 1024px */}
+        {screenLarge && (
+          <div
+            className={`
+              block
+              ${scrolledDown ? "bg-offwhite text-black" : "text-white"}
+              `}
+          >
+            <ul
+              className={`flex justify-center uppercase py-1 paddingx font-bold pb-3`}
+            >
+              <div>
+                <Link
+                  to="home"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="navoptions">
+                    <a className="texthovereffect">Til toppen</a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="about"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="navoptions">
+                    <a className="texthovereffect">Kebabkongen</a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="menu"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="navoptions">
+                    <a className="texthovereffect">Meny</a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="hours"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="navoptions">
+                    <a className="texthovereffect">Åpningstider</a>
+                  </li>
+                </Link>
+              </div>
+              <div>
+                <Link
+                  to="contact"
+                  smooth={true}
+                  duration={SCROLL_DURATION}
+                  onClick={closeNav}
+                >
+                  <li className="navoptions">
+                    <a className="texthovereffect">Finn oss</a>
+                  </li>
+                </Link>
+              </div>
+            </ul>
+          </div>
         )}
       </nav>
       {/* App content */}

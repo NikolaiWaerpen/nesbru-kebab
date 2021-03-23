@@ -7,7 +7,7 @@ const h1Variant = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 0.7,
+      delay: 0.4,
     },
   },
 };
@@ -17,7 +17,7 @@ const h2Variant = {
   visible: {
     opacity: 1,
     transition: {
-      delay: 1.9,
+      delay: 1.2,
     },
   },
 };
@@ -28,7 +28,7 @@ const buttonVariant = {
     y: 0,
     opacity: 1,
     transition: {
-      delay: 1.7,
+      delay: 1,
     },
   },
 };
@@ -41,9 +41,9 @@ export default function Banner() {
         alt="background flour"
         className="w-screen h-screen75 lg:h-screen object-cover object-center opacity-25"
       />
-      <div className="absolute inset-0 flex justify-center top-48 z-20">
+      <div className="absolute inset-0 flex justify-center top-48 lg:top-52 z-20">
         <motion.h1
-          className="text-4xl lg:text-10xl text-offwhite font-extrabold tracking-wider uppercase"
+          className="text-4xl lg:text-6xl text-offwhite font-extrabold tracking-wider uppercase"
           variants={h1Variant}
           initial="hidden"
           animate="visible"
@@ -51,9 +51,9 @@ export default function Banner() {
           Best i test
         </motion.h1>
       </div>
-      <div className="absolute inset-0 flex justify-center top-60 z-20">
+      <div className="absolute inset-0 flex justify-center top-60 lg:top-72 z-20">
         <motion.h2
-          className="text-xl lg:text-10xl text-offwhite font-extrabold tracking-wider uppercase"
+          className="text-xl lg:text-4xl text-offwhite font-extrabold tracking-wider uppercase"
           variants={h2Variant}
           initial="hidden"
           animate="visible"
@@ -61,12 +61,12 @@ export default function Banner() {
           Siden 1992
         </motion.h2>
       </div>
-      <div className="absolute inset-0 flex justify-center z-20 lg:mx-0 top-64 lg:top-32">
+      <div className="absolute inset-0 flex justify-center z-20 lg:mx-0 top-64 lg:top-80">
         <motion.img
           src="/images/transparentkebab.png"
           // src="/images/nesbrukebab/nesbrukebabwhite.png"
           alt="logo picture/burger"
-          className="w-full h-screen29 object-contain lg:h-screen lg:object-contain opacity-90"
+          className="w-full h-screen29 object-contain lg:h-screen40 opacity-90"
           variants={POPEFFECT}
           initial="hidden"
           animate="visible"

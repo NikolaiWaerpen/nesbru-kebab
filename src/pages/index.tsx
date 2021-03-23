@@ -5,7 +5,6 @@ import Hours from "../components/Hours";
 import Map from "../components/Map";
 import Menu from "../components/Menu";
 import Social from "../components/Social";
-import Test from "../components/Test";
 import Footer from "../components/Footer";
 
 export default function Home() {
@@ -13,13 +12,13 @@ export default function Home() {
     <div id={"home"}>
       <Banner />
       <div>
-        <div id={"about"} className="itemcontainer mx-6 lg:mx-16">
+        <div id={"about"} className="itemcontainer mx-6 lg:mx-72">
           <About />
         </div>
         <div id={"menu"} className="itemcontainer">
           <Menu />
         </div>
-        <div id={"hours"} className="itemcontainer mx-6 lg:mx-16">
+        <div id={"hours"} className="itemcontainer mx-6 lg:mx-96">
           <Hours />
         </div>
         <div className="mx-6 sm:mx-44 lg:mx-16 lg:flex lg:justify-around">
@@ -31,14 +30,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="itemcontainer">
-        <Signature />
-      </div> */}
       <div className="itemcontainer">
         <Map />
       </div>
       <Footer />
-      {/* <Test /> */}
     </div>
   );
 }
