@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <div className="bg-offblack text-grayonblack px-6">
-      <div className="mx-52">
+      <div className="md:mx-36 lg:mx-52">
         <div>
           <h3 className="invertedsmallbadge mt-6">Anerkjennelse</h3>
           <p className="mt-6">
