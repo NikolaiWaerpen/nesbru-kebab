@@ -13,7 +13,7 @@ export default function Menu() {
   return (
     <div className="bg-offblack pt-6 pb-6 shadow-xl">
       {/* <h3 className="rounded-lg py-1 px-3 uppercase text-xs xl:text-sm font-semibold tracking-wider text-white bg-black inline-block mx-6"> */}
-      <div className="mx-12 md:mx-44">
+      <div className="mx-6 md:mx-44">
         <h3 className="invertedsmallbadge">Meny</h3>
         <div>
           <div className="xl:flex mt-6 xl:mt-6">
