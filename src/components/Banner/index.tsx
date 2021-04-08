@@ -61,12 +61,12 @@ export default function Banner() {
           Siden 1992
         </motion.h2>
       </div>
-      <div className="absolute inset-0 flex justify-center z-20 lg:mx-0 top-64 lg:top-80">
+      <div className="absolute inset-0 flex justify-center z-20 top-36 lg:top-52">
         <motion.img
-          src="/images/transparentkebab.png"
+          src="/images/blackburger.png"
           // src="/images/nesbrukebab/nesbrukebabwhite.png"
           alt="logo picture/burger"
-          className="w-full h-screen29 object-contain lg:h-screen40 opacity-90"
+          className="w-full h-screen58 object-contain lg:h-screen75 opacity-90"
           variants={POPEFFECT}
           initial="hidden"
           animate="visible"
