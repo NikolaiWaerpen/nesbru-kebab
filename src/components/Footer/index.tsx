@@ -31,11 +31,8 @@ export default function Footer() {
         </div>
         <div className="flex justify-center py-6">
           <span>Delivered by&nbsp;</span>
-          <a
-            className="text-themecolor1"
-            href="https://waerpendevelopment.com/"
-          >
-            Waerpen Development
+          <a className="text-themecolor1" href="https://askerwebdesign.no/">
+            Asker Webdesign
           </a>
         </div>
       </div>
