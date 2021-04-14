@@ -1,5 +1,5 @@
 // Google maps API key
-exports.MAP_KEY = "AIzaSyDLX3fInnzrZVno5pJFpaEbdldeU8vHwKM";
+exports.MAP_KEY = "AIzaSyDzclWVr5Ot28MGo1qJ3ZPsJo9h8A7sFkc";
 
 // Scroll library standard
 exports.SCROLL_DURATION = 1000;
